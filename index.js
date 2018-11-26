@@ -41,7 +41,7 @@ const getRecentlyPlayed = () => {
 	})
 }
 
-app.get('/my-recently-played', function (req, res, next) {
+app.get('/spotify', function (req, res, next) {
 	myCache.get("token", (err, value) => {
 		if (!err) {
 			if (value === undefined) {
